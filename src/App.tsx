@@ -7,6 +7,7 @@ import AuthProvider from './context/AuthContext';
 const HomePage = lazy(() => import('./pages/HomePage'));
 const Dashboard = lazy(() => import('./pages/Dashboard'));
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import Footer from './components/Footer';
 
 function App() {
   const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ function App() {
                 </Route>
               </Routes>
             </Suspense>
+            <Footer/>
           </AuthProvider>
         </QueryClientProvider>
       </Router>

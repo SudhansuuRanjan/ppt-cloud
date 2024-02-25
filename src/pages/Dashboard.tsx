@@ -22,13 +22,6 @@ const Dashboard = () => {
                 uploadFileModal && <UploadFileModal setUploadFileModal={setUploadFileModal} />
             }
             <SearchBar />
-            <div className="py-1 text-center font-medium">
-                {
-                    auth.currentUser
-                        ? <h1>Welcome {auth.currentUser.displayName}!</h1>
-                        : <h1>Welcome to the dashboard</h1>
-                }</div>
-
             <div className="flex flex-col md:flex-row items-center justify-center gap-y-5 gap-10 mt-6 mb-5">
                 <Button style="secondary" disabled={false} onClick={() => setUploadFileModal(true)}>
                     Upload PPT
@@ -39,8 +32,8 @@ const Dashboard = () => {
                 </Button>
             </div>
 
-            <section className="px-10 mt-5">
-                <h1 className="text-2xl font-bold">
+            <section className="md:px-10 px-5 mt-5">
+                <h1 className="text-2xl font-bold mb-2">
                     My Files
                 </h1>
 

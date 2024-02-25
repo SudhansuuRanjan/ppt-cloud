@@ -94,7 +94,7 @@ const UploadFileModal = ({ setUploadFileModal }: { setUploadFileModal: React.Dis
 
     return (
         <div className="bg-black bg-opacity-50 backdrop-blur fixed inset-0 flex items-center justify-center z-50">
-            <div className="bg-white w-[32rem] h-fit p-8 rounded-2xl flex flex-col">
+            <div className="bg-white md:w-[32rem] w-[95%] h-fit p-8 rounded-2xl flex flex-col">
                 <div className="flex justify-between">
                     <h1 className="text-2xl font-bold">Upload PPT</h1>
                     <button disabled={loading} onClick={() => setUploadFileModal(false)}>

@@ -6,7 +6,7 @@ const NavBar = () => {
     const { currentUser, signOut } = useAuth();
 
     return (
-        <nav className="flex items-center justify-between shadow px-5 py-3">
+        <nav className="flex fixed top-0 w-full z-50 bg-white items-center justify-between shadow px-5 py-3">
             <Link to="/">
                 <h1 className="text-[#1e1e1e] text-2xl font-bold">PPT Cloud</h1>
             </Link>
